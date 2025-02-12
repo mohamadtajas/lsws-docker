@@ -62,3 +62,28 @@
 2025-02-13 00:41:33.767117 [INFO] [535] [T0] [172.18.0.1:55782:HTTP2-1#_AdminVHost] add child process pid: 554, procinfo: 0x102586f0
 2025-02-13 00:41:33.495750 [INFO] [536] [T0] [/usr/local/lsws/DEFAULT/html/.htaccess:65] Cache Root is not set, ignore cache Enable/Disble directive.
 2025-02-13 00:41:33.498685 [INFO] [536] [T0] [lsphp8] add child process pid: 553, procinfo: 0x102462d0
+2025-02-13 00:41:40.003898 [INFO] [536] [T0] [uds://tmp/lshttpd/lsphp.sock] Error Timeout, restart and try again!
+2025-02-13 00:41:40.004060 [INFO] [536] [T0] [172.18.0.1:47556#Example] connection to [/tmp/lshttpd/lsphp.sock.914] on request #0, confirmed, 0, associated process: 553, running: 1, error: No such file or directory!
+2025-02-13 00:41:40.005128 [INFO] [536] [T0] [uds://tmp/lshttpd/lsphp.sock] Connection refused, restart!
+2025-02-13 00:41:40.005130 [NOTICE] [536] [T0] Graceful stop process group lead by pid: 553
+2025-02-13 00:41:40.005880 [NOTICE] [536] [T0] All pending requests are finished, stop process group lead by pid: 553
+2025-02-13 00:41:40.006055 [INFO] [536] [T0] [lsphp8] add child process pid: 556, procinfo: 0x1024d3a0
+2025-02-13 00:41:40.023736 [INFO] [535] [T0] [uds://tmp/lshttpd/lsphp.sock] Error Timeout, restart and try again!
+2025-02-13 00:41:40.023797 [INFO] [535] [T0] [172.18.0.1:39180#Example] connection to [/tmp/lshttpd/lsphp.sock] on request #0, confirmed, 0, associated process: 551, running: 1, error: No such file or directory!
+2025-02-13 00:41:40.024103 [INFO] [535] [T0] [uds://tmp/lshttpd/lsphp.sock] Connection refused, restart!
+2025-02-13 00:41:40.024104 [NOTICE] [535] [T0] Graceful stop process group lead by pid: 551
+2025-02-13 00:41:40.024205 [NOTICE] [535] [T0] All pending requests are finished, stop process group lead by pid: 551
+2025-02-13 00:41:40.024424 [INFO] [535] [T0] [lsphp8] add child process pid: 558, procinfo: 0x10249940
+2025-02-13 00:41:43.276394 [NOTICE] [532] [T0] [532] Cmd from child: [extappkill:559:-3:0]
+2025-02-13 00:41:43.276525 [INFO] [532] [T0] [CLEANUP] Send signal: 15 to process: 559 (lsphp)
+2025-02-13 00:41:43.775281 [NOTICE] [532] [T0] [532] Cmd from child: [extappkill:557:-3:0]
+2025-02-13 00:41:43.775392 [INFO] [532] [T0] [CLEANUP] Send signal: 15 to process: 557 (lsphp)
+2025-02-13 00:41:43.774992 [INFO] [536] [T0] [172.18.0.1:47556#Example] Abort request processing by PID:557, kill: 1, begin time: 3, sent time: 3, req processed: 0
+2025-02-13 00:41:43.775251 [NOTICE] [536] [T0] sendKillCmdToWatchdog: 'extappkill:557:-3:0'.
+2025-02-13 00:41:43.275839 [INFO] [535] [T0] [172.18.0.1:39180#Example] Abort request processing by PID:559, kill: 1, begin time: 3, sent time: 3, req processed: 0
+2025-02-13 00:41:43.276362 [NOTICE] [535] [T0] sendKillCmdToWatchdog: 'extappkill:559:-3:0'.
+2025-02-13 00:41:46.228769 [NOTICE] [532] [T0] [532] Cmd from child: [extappkill:569:-3:0]
+2025-02-13 00:41:46.228893 [INFO] [532] [T0] [CLEANUP] Send signal: 15 to process: 569 (lsphp)
+2025-02-13 00:41:46.228134 [INFO] [536] [T0] [172.18.0.1:47794#Example] Abort request processing by PID:569, kill: 1, begin time: 3, sent time: 3, req processed: 0
+2025-02-13 00:41:46.228739 [NOTICE] [536] [T0] sendKillCmdToWatchdog: 'extappkill:569:-3:0'.
+2025-02-13 00:42:10.063820 [INFO] [535] [T0] Process with PID: 554 is dead 
