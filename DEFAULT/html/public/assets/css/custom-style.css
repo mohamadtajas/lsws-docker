@@ -1,0 +1,11 @@
+/*your custom css goes here*/
+@media (min-width: 1200px) {
+    .sidebar-custom-xl{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 15%;
+        height: 75vh;
+        overflow-y: auto;
+        z-index:0 !important;
+    }
+}

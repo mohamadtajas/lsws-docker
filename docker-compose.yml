@@ -1,0 +1,21 @@
+services:
+  litespeed:
+    image: litespeedtech/litespeed:${LSWS_VERSION}-${PHP_VERSION}
+    env_file:
+      - .env
+    volumes:
+        - ./lsws/conf:/usr/local/lsws/conf
+        - ./lsws/admin/conf:/usr/local/lsws/admin/conf
+        - ./bin:/usr/local/bin
+        - ./sites:/var/www/vhosts/
+        - ./acme:/root/.acme.sh/
+        - ./logs:/usr/local/lsws/logs/
+        - ./DEFAULT:/usr/local/lsws/DEFAULT/
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+      - 7080:7080
+    restart: always
+    environment:
+      TZ: ${TimeZone}

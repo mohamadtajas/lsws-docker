@@ -1,0 +1,44 @@
+2025-02-13 00:31:28.214749 [NOTICE] [T0] Your License key will expire in 14 days
+2025-02-13 00:31:28.214876 [NOTICE] [T0] Loading LiteSpeed/6.3.1 Enterprise ...
+2025-02-13 00:31:28.214956 [NOTICE] [T0] Using [BoringSSL]
+2025-02-13 00:31:28.215735 [NOTICE] [88] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7533
+2025-02-13 00:31:28.215891 [NOTICE] [88] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2025-02-13 00:31:28.217094 [NOTICE] [88] [T0] [config] chroot is disabled.
+2025-02-13 00:31:28.217188 [INFO] [88] [T0] old priority: 0, new priority: 0
+2025-02-13 00:31:28.217282 [INFO] [88] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2025-02-13 00:31:28.224824 [INFO] [88] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2025-02-13 00:31:28.224914 [INFO] [88] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2025-02-13 00:31:28.225665 [NOTICE] [88] [T0] start cgid: 89, /usr/local/lsws/bin/lscgid
+2025-02-13 00:31:28.225899 [NOTICE] [88] [T0] start cgid: 90, /usr/local/lsws/bin/httpd
+2025-02-13 00:31:28.227526 [INFO] [88] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2025-02-13 00:31:28.227627 [INFO] [88] [T0] Add CloudFlare Subnets to trusted ACL ...
+2025-02-13 00:31:13.645508 [ERROR] [88] [T0] SocketListener::start(): Can't listen at address adminListener: Address already in use!
+2025-02-13 00:31:13.645921 [ERROR] [88] [T0] HttpServer::addListener(adminListener) failed to create new listener
+2025-02-13 00:31:13.646066 [ERROR] [88] [T0] [config:admin:listener:adminListener] failed to start listener on address *:7080!
+2025-02-13 00:31:13.646180 [ERROR] [88] [T0] [config:admin:listener] No listener is available for admin virtual host!
+2025-02-13 00:31:13.646281 [FATAL] [88] [T0] Fatal error in LiteSpeed configuration.
+2025-02-13 00:31:17.903333 [NOTICE] [35] [T0] [172.18.0.1:34794:HTTP2-27#_AdminVHost] [STDERR] [WebAdmin Console] Failed Login Attempt - username: admin ip: 172.18.0.1 url: https://localhost:7080/login.php\n
+2025-02-13 00:31:19.918422 [NOTICE] [35] [T0] [172.18.0.1:34794:HTTP2-31#_AdminVHost] [STDERR] [WebAdmin Console] Failed Login Attempt - username: admin ip: 172.18.0.1 url: https://localhost:7080/login.php\n
+2025-02-13 00:31:57.065534 [INFO] [35] [T0] Process with PID: 60 is dead 
+2025-02-13 00:32:09.509227 [INFO] [35] [T0] [172.18.0.1:34794:HTTP2-33#_AdminVHost] add child process pid: 119, procinfo: 0x13f4a7b0
+2025-02-13 00:33:17.098055 [INFO] [35] [T0] Process with PID: 119 is dead 
+2025-02-13 00:33:41.088351 [INFO] [35] [T0] [172.18.0.1:34794:HTTP2-79#_AdminVHost] add child process pid: 145, procinfo: 0x13f4a7b0
+2025-02-13 00:34:29.139733 [NOTICE] [35] [T0] [172.18.0.1:34794:HTTP2-99#_AdminVHost] [STDERR] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /usr/local/lsws/admin/html.6.3.1/classes/CValidation.php on line 333\n
+2025-02-13 00:38:03.082967 [INFO] [35] [T0] Process with PID: 145 is dead 
+2025-02-13 00:38:10.336298 [INFO] [35] [T0] [172.18.0.1:34794:HTTP2-175#_AdminVHost] add child process pid: 224, procinfo: 0x13f4a7b0
+2025-02-13 00:38:43.027663 [INFO] [35] [T0] Process with PID: 224 is dead 
+2025-02-13 00:39:14.367854 [INFO] [35] [T0] [172.18.0.1:44756:HTTP2-1#_AdminVHost] add child process pid: 236, procinfo: 0x13f4a7b0
+2025-02-13 00:39:53.068027 [INFO] [35] [T0] Process with PID: 236 is dead 
+2025-02-13 00:40:04.367316 [INFO] [35] [T0] [172.18.0.1:44756:HTTP2-11#_AdminVHost] add child process pid: 250, procinfo: 0x13f4a7b0
+2025-02-13 00:40:30.080997 [INFO] [35] [T0] [172.18.0.1:44756:HTTP2-31#_AdminVHost] add child process pid: 508, procinfo: 0x13f4a7b0
+2025-02-13 00:41:13.092939 [INFO] [35] [T0] Process with PID: 508 is dead 
+2025-02-13 00:41:21.172277 [INFO] [35] [T0] [172.18.0.1:44756:HTTP2-49#_AdminVHost] add child process pid: 526, procinfo: 0x13f4a7b0
+2025-02-13 00:41:30.502289 [NOTICE] [35] [T0] killed by SIGINT!
+2025-02-13 00:41:30.502294 [NOTICE] [35] [T0] Start shutting down gracefully ...
+2025-02-13 00:41:30.502314 [NOTICE] [35] [T0] Event-loop lingering start.
+2025-02-13 00:41:30.774782 [NOTICE] [35] [T0] New litespeed process is ready, stops listeners
+2025-02-13 00:41:30.774795 [INFO] [35] [T0] Stop all listeners.
+2025-02-13 00:41:30.774797 [INFO] [35] [T0] Stop listener *:80.
+2025-02-13 00:41:30.774802 [INFO] [35] [T0] Stop listener *:443.
+2025-02-13 00:41:30.774815 [INFO] [35] [T0] Stop listener *:7080.
+2025-02-13 00:41:30.774817 [NOTICE] [35] [T0] QuicEngine::startCoolDown(), active connections: 0

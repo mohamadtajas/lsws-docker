@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.stpazar.stbsoft",
+      "sha256_cert_fingerprints": [
+        "E9:8B:8D:75:39:52:CA:DB:26:72:15:D1:45:97:9D:8F:C2:55:5D:B1:73:DD:8B:1B:A7:EF:FE:5B:86:11:F7:DD",  
+        "72:54:90:6E:BA:12:BB:6C:72:E5:B5:14:88:94:12:4C:93:2E:C6:BC:1C:DC:8C:EB:7C:98:49:72:75:74:C4:ED"   
+      ]
+    }
+  }
+]
+

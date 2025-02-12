@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtualHostConfig>
+  <docRoot>$VH_ROOT/html/</docRoot>
+  <enableGzip>1</enableGzip>
+  <logging>
+    <log>
+      <useServer>0</useServer>
+      <fileName>$VH_ROOT/logs/error.log</fileName>
+      <logLevel>DEBUG</logLevel>
+      <rollingSize>10M</rollingSize>
+    </log>
+    <accessLog>
+      <useServer>0</useServer>
+      <fileName>$VH_ROOT/logs/access.log</fileName>
+      <rollingSize>10M</rollingSize>
+      <keepDays>30</keepDays>
+      <compressArchive>0</compressArchive>
+    </accessLog>
+  </logging>
+  <index>
+    <useServer>0</useServer>
+    <indexFiles>index.php</indexFiles>
+    <autoIndex>1</autoIndex>
+    <autoIndexURI>/_autoindex/default.php</autoIndexURI>
+  </index>
+  <customErrorPages>
+    <errorPage>
+      <errCode>404</errCode>
+      <url>/error404.html</url>
+    </errorPage>
+  </customErrorPages>
+  <scriptHandlerList>
+    <scriptHandler>
+      <suffix>php</suffix>
+      <type>lsapi</type>
+      <handler>lsphp8</handler>
+    </scriptHandler>
+  </scriptHandlerList>
+  <htAccess>
+    <allowOverride>28</allowOverride>
+    <accessFileName>.htaccess</accessFileName>
+  </htAccess>
+  <expires>
+    <enableExpires>1</enableExpires>
+  </expires>
+  <security>
+    <hotlinkCtrl>
+      <enableHotlinkCtrl>0</enableHotlinkCtrl>
+      <suffixes>gif,  jpeg,  jpg</suffixes>
+      <allowDirectAccess>1</allowDirectAccess>
+      <onlySelf>1</onlySelf>
+    </hotlinkCtrl>
+    <accessControl>
+      <allow>*</allow>
+    </accessControl>
+    <realmList>
+      <realm>
+        <type>file</type>
+        <name>SampleProtectedArea</name>
+        <userDB>
+          <location>$VH_ROOT/conf/htpasswd</location>
+          <maxCacheSize>200</maxCacheSize>
+          <cacheTimeout>60</cacheTimeout>
+        </userDB>
+        <groupDB>
+          <location>$VH_ROOT/conf/htgroup</location>
+          <maxCacheSize>200</maxCacheSize>
+          <cacheTimeout>60</cacheTimeout>
+        </groupDB>
+      </realm>
+    </realmList>
+  </security>
+  <extProcessorList>
+    <extProcessor>
+      <type>lsapi</type>
+      <name>lsphp8</name>
+      <address>uds://tmp/lshttpd/lsphp.sock</address>
+      <maxConns>200</maxConns>
+      <env>PHP_LSAPI_CHILDREN=200</env>
+      <env>LSAPI_AVOID_FORK=200M</env>
+      <initTimeout>60</initTimeout>
+      <retryTimeout>300</retryTimeout>
+      <respBuffer>0</respBuffer>
+      <autoStart>1</autoStart>
+      <path>/usr/local/lsws/lsphp8/bin/lsphp</path>
+      <instances>1</instances>
+      <priority>0</priority>
+      <memSoftLimit>1024M</memSoftLimit>
+      <memHardLimit>2048M</memHardLimit>
+    </extProcessor>
+  </extProcessorList>
+  <contextList>
+    <context>
+      <type>NULL</type>
+      <uri>/docs/</uri>
+      <location>$SERVER_ROOT/docs/</location>
+      <allowBrowse>1</allowBrowse>
+    </context>
+    <context>
+      <type>NULL</type>
+      <uri>/blocked/</uri>
+      <location>blocked/</location>
+      <allowBrowse>0</allowBrowse>
+    </context>
+    <context>
+      <type>cgi</type>
+      <uri>/cgi-bin/</uri>
+      <location>$VH_ROOT/cgi-bin/</location>
+    </context>
+  </contextList>
+  <rewrite>
+    <enable>1</enable>
+    <logLevel>0</logLevel>
+    <rules>
+&lt;IfModule LiteSpeed&gt;
+    CacheLookup public on
+    ExpiresActive on
+    CacheLookup public on
+    ExpiresActive on
+    ExpiresDefault &quot;access plus 1 day&quot;
+    Header set Cache-Control &quot;public, max-age=86400&quot;
+&lt;/IfModule&gt;
+
+
+&lt;IfModule mod_deflate.c&gt;
+    AddOutputFilterByType DEFLATE application/json application/xml text/xml
+&lt;/IfModule&gt;
+    </rules>
+  </rewrite>
+  <modpagespeed>
+    <enabled>0</enabled>
+  </modpagespeed>
+  <frontPage>
+    <enable>0</enable>
+    <disableAdmin>0</disableAdmin>
+  </frontPage>
+  <awstats>
+    <updateMode>0</updateMode>
+    <workingDir>$VH_ROOT/awstats</workingDir>
+    <awstatsURI>/awstats/</awstatsURI>
+    <siteDomain>localhost</siteDomain>
+    <siteAliases>127.0.0.1 localhost</siteAliases>
+    <updateInterval>86400</updateInterval>
+    <updateOffset>0</updateOffset>
+  </awstats>
+</virtualHostConfig>

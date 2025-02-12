@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "G4226XXHKT.com.stpazar.stbsoft",
+        "paths": [
+          "/tr-product/*",
+          "/category/*",
+          "*"
+        ]
+      }
+    ]
+  }
+}

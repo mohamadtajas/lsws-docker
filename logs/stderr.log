@@ -1,0 +1,13 @@
+2025-02-13 00:15:06.322 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:15:10.246 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:23:14.644 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:25:36.369 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:27:41.837 [STDERR] [ERROR] Failed to find your license key under - /usr/local/lsws/ or /usr/local/lsws/conf/!
+2025-02-13 00:27:41.837 [STDERR] [ERROR] Failed to find your license key under - /usr/local/lsws/ or /usr/local/lsws/conf/!
+2025-02-13 00:27:41.837 [STDERR] [FATAL] license problem, try switching back to Apache!
+2025-02-13 00:30:27.676 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:30:30.629 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:30:53.166 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:30:55.790 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:31:17.910 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 00:31:19.924 [STDERR] sh: 1: /usr/sbin/sendmail: not found
