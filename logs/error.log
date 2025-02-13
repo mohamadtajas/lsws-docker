@@ -56,3 +56,6 @@
 2025-02-13 14:22:42.275348 [INFO] [555] [T0] [172.18.0.1:38486:HTTP2-1#_AdminVHost] add child process pid: 571, procinfo: 0x1c755e00
 2025-02-13 14:23:56.479460 [INFO] [555] [T0] [172.18.0.1:38486:HTTP2-75#_AdminVHost] add child process pid: 597, procinfo: 0x1c755e00
 2025-02-13 14:26:39.056833 [INFO] [555] [T0] Process with PID: 597 is dead 
+2025-02-13 14:32:40.077041 [NOTICE] [552] [T0] [696] [AutoUpdate] Checking for new releases...
+2025-02-13 14:32:40.077256 [INFO] [552] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2025-02-13 14:32:40.446118 [INFO] [552] [T0] [AutoUpdate] No new update.
