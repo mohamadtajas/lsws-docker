@@ -1,0 +1,89 @@
+2025-02-13 00:41:30.699870 [NOTICE] [T0] Your License key will expire in 14 days
+2025-02-13 00:41:30.699988 [NOTICE] [T0] Loading LiteSpeed/6.3.1 Enterprise ...
+2025-02-13 00:41:30.700068 [NOTICE] [T0] Using [BoringSSL]
+2025-02-13 00:41:30.700709 [NOTICE] [532] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7547
+2025-02-13 00:41:30.700827 [NOTICE] [532] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2025-02-13 00:41:30.701768 [NOTICE] [532] [T0] [*:80] Recovering server socket, fd: 9 
+2025-02-13 00:41:30.701894 [NOTICE] [532] [T0] [*:80] Recovering server socket, SO_REUSEPORT #2, fd: 10.
+2025-02-13 00:41:30.703903 [NOTICE] [532] [T0] [*:443] Recovering server socket, fd: 11 
+2025-02-13 00:41:30.703988 [NOTICE] [532] [T0] [*:443] Recovering server socket, SO_REUSEPORT #2, fd: 12.
+2025-02-13 00:41:30.704056 [NOTICE] [532] [T0] [UDP *:443] Recovering server socket, SO_REUSEPORT #2, fd: 14
+2025-02-13 00:41:30.704117 [NOTICE] [532] [T0] [*:7080] Recovering server socket, fd: 15 
+2025-02-13 00:41:30.704194 [NOTICE] [532] [T0] [config] chroot is disabled.
+2025-02-13 00:41:30.704258 [INFO] [532] [T0] old priority: 0, new priority: 0
+2025-02-13 00:41:30.704330 [INFO] [532] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2025-02-13 00:41:30.705802 [INFO] [532] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2025-02-13 00:41:30.705886 [INFO] [532] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2025-02-13 00:41:30.706165 [NOTICE] [532] [T0] start cgid: 533, /usr/local/lsws/bin/lscgid
+2025-02-13 00:41:30.706567 [NOTICE] [532] [T0] start cgid: 534, /usr/local/lsws/bin/httpd
+2025-02-13 00:41:30.710136 [INFO] [532] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2025-02-13 00:41:30.710250 [INFO] [532] [T0] Add CloudFlare Subnets to trusted ACL ...
+2025-02-13 00:41:30.711209 [NOTICE] [532] [T0] The maximum number of file descriptor limit is set to 1048576.
+2025-02-13 00:41:30.715113 [NOTICE] [532] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2025-02-13 00:41:30.715189 [INFO] [532] [T0] [config:server:php] Try Litespeed PHP handlers
+2025-02-13 00:41:30.715273 [INFO] [532] [T0] PHP handler [lsphp83] with PHP binary [/usr/local/lsws/lsphp83/bin/lsphp] already exists.
+2025-02-13 00:41:30.715338 [INFO] [532] [T0] Add #1 suffix handler [lsphp83]->[lsphp8].
+2025-02-13 00:41:30.715397 [INFO] [532] [T0] Associate [php83] with PHP handler [lsphp8].
+2025-02-13 00:41:30.715457 [INFO] [532] [T0] Add #2 suffix handler [php83]->[lsphp8].
+2025-02-13 00:41:30.715518 [INFO] [532] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2025-02-13 00:41:30.715669 [INFO] [532] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php73]
+2025-02-13 00:41:30.718877 [NOTICE] [532] [T0] [config:vhost:Example:epsr:lsphp8] invalid path - /usr/local/lsws/lsphp8/bin/lsphp, it cannot be started by Web server!
+2025-02-13 00:41:30.721981 [ERROR] [532] [T0] [config:template:docker] Listener [HTTP] does not exist
+2025-02-13 00:41:30.722047 [ERROR] [532] [T0] [config:template:docker] Listener [HTTPS] does not exist
+2025-02-13 00:41:30.722185 [ERROR] [532] [T0] [config:vhost:localhost] Path for vhost root is not accessible: /var/www/vhosts/localhost/
+2025-02-13 00:41:30.723449 [ERROR] [532] [T0] [config:template:centralConfigLog] Listener [Default] does not exist
+2025-02-13 00:41:30.724622 [ERROR] [532] [T0] [config:template:PHP_SuEXEC] Listener [Default] does not exist
+2025-02-13 00:41:30.725710 [ERROR] [532] [T0] [config:template:EasyRailsWithSuEXEC] Listener [Default] does not exist
+2025-02-13 00:41:30.725797 [INFO] [532] [T0] Stop listener *:443.
+2025-02-13 00:41:30.726436 [NOTICE] [532] [T0] Litespeed is ready to serve...
+2025-02-13 00:41:30.726710 [NOTICE] [532] [T0] [AutoRestarter] new child process with pid=535 is forked!
+2025-02-13 00:41:30.726930 [NOTICE] [532] [T0] [AutoRestarter] new child process with pid=536 is forked!
+2025-02-13 00:41:30.727263 [NOTICE] [536] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 10
+2025-02-13 00:41:30.727273 [NOTICE] [535] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 9
+2025-02-13 00:41:30.727391 [INFO] [536] [T0] Stop listener *:7080.
+2025-02-13 00:41:30.801861 [NOTICE] [532] [T0] Memory size is: 7699632KB.
+2025-02-13 00:41:30.727596 [NOTICE] [535] [T0] [Child: 535] Setup swapping space...
+2025-02-13 00:41:30.727628 [NOTICE] [535] [T0] Successfully change current user to nobody
+2025-02-13 00:41:30.727630 [NOTICE] [535] [T0] Core dump is enabled.
+2025-02-13 00:41:30.727762 [INFO] [535] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 00:41:30.727810 [INFO] [535] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 00:41:30.727849 [INFO] [535] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 00:41:30.727850 [ALERT] [535] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 00:41:30.727827 [NOTICE] [536] [T0] [Child: 536] Setup swapping space...
+2025-02-13 00:41:30.727862 [NOTICE] [536] [T0] Successfully change current user to nobody
+2025-02-13 00:41:30.727864 [NOTICE] [536] [T0] Core dump is enabled.
+2025-02-13 00:41:30.728077 [INFO] [536] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 00:41:30.728133 [INFO] [536] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 00:41:30.728181 [INFO] [536] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 00:41:30.728182 [ALERT] [536] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 00:41:31.668849 [INFO] [532] [T0] [LICENSE] License is OK.
+2025-02-13 00:41:32.830455 [INFO] [535] [T0] [/usr/local/lsws/DEFAULT/html/.htaccess:65] Cache Root is not set, ignore cache Enable/Disble directive.
+2025-02-13 00:41:32.833360 [INFO] [535] [T0] [lsphp8] add child process pid: 551, procinfo: 0x10248a40
+2025-02-13 00:41:33.767117 [INFO] [535] [T0] [172.18.0.1:55782:HTTP2-1#_AdminVHost] add child process pid: 554, procinfo: 0x102586f0
+2025-02-13 00:41:33.495750 [INFO] [536] [T0] [/usr/local/lsws/DEFAULT/html/.htaccess:65] Cache Root is not set, ignore cache Enable/Disble directive.
+2025-02-13 00:41:33.498685 [INFO] [536] [T0] [lsphp8] add child process pid: 553, procinfo: 0x102462d0
+2025-02-13 00:41:40.003898 [INFO] [536] [T0] [uds://tmp/lshttpd/lsphp.sock] Error Timeout, restart and try again!
+2025-02-13 00:41:40.004060 [INFO] [536] [T0] [172.18.0.1:47556#Example] connection to [/tmp/lshttpd/lsphp.sock.914] on request #0, confirmed, 0, associated process: 553, running: 1, error: No such file or directory!
+2025-02-13 00:41:40.005128 [INFO] [536] [T0] [uds://tmp/lshttpd/lsphp.sock] Connection refused, restart!
+2025-02-13 00:41:40.005130 [NOTICE] [536] [T0] Graceful stop process group lead by pid: 553
+2025-02-13 00:41:40.005880 [NOTICE] [536] [T0] All pending requests are finished, stop process group lead by pid: 553
+2025-02-13 00:41:40.006055 [INFO] [536] [T0] [lsphp8] add child process pid: 556, procinfo: 0x1024d3a0
+2025-02-13 00:41:40.023736 [INFO] [535] [T0] [uds://tmp/lshttpd/lsphp.sock] Error Timeout, restart and try again!
+2025-02-13 00:41:40.023797 [INFO] [535] [T0] [172.18.0.1:39180#Example] connection to [/tmp/lshttpd/lsphp.sock] on request #0, confirmed, 0, associated process: 551, running: 1, error: No such file or directory!
+2025-02-13 00:41:40.024103 [INFO] [535] [T0] [uds://tmp/lshttpd/lsphp.sock] Connection refused, restart!
+2025-02-13 00:41:40.024104 [NOTICE] [535] [T0] Graceful stop process group lead by pid: 551
+2025-02-13 00:41:40.024205 [NOTICE] [535] [T0] All pending requests are finished, stop process group lead by pid: 551
+2025-02-13 00:41:40.024424 [INFO] [535] [T0] [lsphp8] add child process pid: 558, procinfo: 0x10249940
+2025-02-13 00:41:43.276394 [NOTICE] [532] [T0] [532] Cmd from child: [extappkill:559:-3:0]
+2025-02-13 00:41:43.276525 [INFO] [532] [T0] [CLEANUP] Send signal: 15 to process: 559 (lsphp)
+2025-02-13 00:41:43.775281 [NOTICE] [532] [T0] [532] Cmd from child: [extappkill:557:-3:0]
+2025-02-13 00:41:43.775392 [INFO] [532] [T0] [CLEANUP] Send signal: 15 to process: 557 (lsphp)
+2025-02-13 00:41:43.774992 [INFO] [536] [T0] [172.18.0.1:47556#Example] Abort request processing by PID:557, kill: 1, begin time: 3, sent time: 3, req processed: 0
+2025-02-13 00:41:43.775251 [NOTICE] [536] [T0] sendKillCmdToWatchdog: 'extappkill:557:-3:0'.
+2025-02-13 00:41:43.275839 [INFO] [535] [T0] [172.18.0.1:39180#Example] Abort request processing by PID:559, kill: 1, begin time: 3, sent time: 3, req processed: 0
+2025-02-13 00:41:43.276362 [NOTICE] [535] [T0] sendKillCmdToWatchdog: 'extappkill:559:-3:0'.
+2025-02-13 00:41:46.228769 [NOTICE] [532] [T0] [532] Cmd from child: [extappkill:569:-3:0]
+2025-02-13 00:41:46.228893 [INFO] [532] [T0] [CLEANUP] Send signal: 15 to process: 569 (lsphp)
+2025-02-13 00:41:46.228134 [INFO] [536] [T0] [172.18.0.1:47794#Example] Abort request processing by PID:569, kill: 1, begin time: 3, sent time: 3, req processed: 0
+2025-02-13 00:41:46.228739 [NOTICE] [536] [T0] sendKillCmdToWatchdog: 'extappkill:569:-3:0'.
+2025-02-13 00:42:10.063820 [INFO] [535] [T0] Process with PID: 554 is dead 

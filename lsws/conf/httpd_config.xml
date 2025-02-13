@@ -66,7 +66,13 @@
     <enableGzipCompress>1</enableGzipCompress>
     <compressibleTypes>default</compressibleTypes>
     <enableDynGzipCompress>1</enableDynGzipCompress>
+    <gzipCompressLevel>6</gzipCompressLevel>
+    <enableBrCompress>6</enableBrCompress>
     <gzipAutoUpdateStatic>1</gzipAutoUpdateStatic>
+    <gzipStaticCompressLevel>6</gzipStaticCompressLevel>
+    <brStaticCompressLevel>6</brStaticCompressLevel>
+    <gzipMaxFileSize>1000000</gzipMaxFileSize>
+    <gzipMinFileSize>500</gzipMinFileSize>
   </tuning>
   <security>
     <fileAccessControl>
@@ -133,6 +139,13 @@
       <memHardLimit>2048M</memHardLimit>
     </extProcessor>
   </extProcessorList>
+  <scriptHandlerList>
+    <scriptHandler>
+      <suffix>php</suffix>
+      <type>lsapi</type>
+      <handler>lsphp8</handler>
+    </scriptHandler>
+  </scriptHandlerList>
   <phpConfig>
     <maxConns>35</maxConns>
     <env>PHP_LSAPI_CHILDREN=35</env>

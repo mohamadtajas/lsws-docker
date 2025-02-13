@@ -1,0 +1,163 @@
+2025-02-13 14:01:12.439307 [NOTICE] [T0] Your License key will expire in 14 days
+2025-02-13 14:01:12.439528 [NOTICE] [T0] Loading LiteSpeed/6.3.1 Enterprise ...
+2025-02-13 14:01:12.439623 [NOTICE] [T0] Using [BoringSSL]
+2025-02-13 14:01:12.440369 [NOTICE] [236] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7867
+2025-02-13 14:01:12.440608 [NOTICE] [236] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2025-02-13 14:01:12.441809 [NOTICE] [236] [T0] [*:80] Recovering server socket, fd: 9 
+2025-02-13 14:01:12.441948 [NOTICE] [236] [T0] [*:80] Recovering server socket, SO_REUSEPORT #2, fd: 10.
+2025-02-13 14:01:12.442112 [NOTICE] [236] [T0] [*:7080] Recovering server socket, fd: 11 
+2025-02-13 14:01:12.442244 [NOTICE] [236] [T0] [config] chroot is disabled.
+2025-02-13 14:01:12.442334 [INFO] [236] [T0] old priority: 0, new priority: 0
+2025-02-13 14:01:12.442471 [INFO] [236] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2025-02-13 14:01:12.444333 [INFO] [236] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2025-02-13 14:01:12.444512 [INFO] [236] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2025-02-13 14:01:12.445287 [NOTICE] [236] [T0] start cgid: 237, /usr/local/lsws/bin/lscgid
+2025-02-13 14:01:12.445600 [NOTICE] [236] [T0] start cgid: 238, /usr/local/lsws/bin/httpd
+2025-02-13 14:01:12.448156 [INFO] [236] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2025-02-13 14:01:12.448584 [INFO] [236] [T0] Add CloudFlare Subnets to trusted ACL ...
+2025-02-13 14:01:12.451878 [NOTICE] [236] [T0] The maximum number of file descriptor limit is set to 1048576.
+2025-02-13 14:01:12.466837 [NOTICE] [236] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2025-02-13 14:01:12.467038 [INFO] [236] [T0] [config:server:php] Try Litespeed PHP handlers
+2025-02-13 14:01:12.467188 [INFO] [236] [T0] PHP handler [lsphp83] with PHP binary [/usr/local/lsws/lsphp83/bin/lsphp] already exists.
+2025-02-13 14:01:12.467336 [INFO] [236] [T0] Add #1 suffix handler [lsphp83]->[lsphp8].
+2025-02-13 14:01:12.467442 [INFO] [236] [T0] Associate [php83] with PHP handler [lsphp8].
+2025-02-13 14:01:12.467538 [INFO] [236] [T0] Add #2 suffix handler [php83]->[lsphp8].
+2025-02-13 14:01:12.467640 [INFO] [236] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2025-02-13 14:01:12.467953 [INFO] [236] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php73]
+2025-02-13 14:01:12.474845 [NOTICE] [236] [T0] [config:vhost:Example:epsr:lsphp8] invalid path - /usr/local/lsws/lsphp8/bin/lsphp, it cannot be started by Web server!
+2025-02-13 14:01:12.480748 [ERROR] [236] [T0] [config:template:docker] Listener [HTTP] does not exist
+2025-02-13 14:01:12.480900 [ERROR] [236] [T0] [config:template:docker] Listener [HTTPS] does not exist
+2025-02-13 14:01:12.481050 [ERROR] [236] [T0] [config:vhost:localhost] Path for vhost root is not accessible: /var/www/vhosts/localhost/
+2025-02-13 14:01:12.483195 [ERROR] [236] [T0] [config:template:centralConfigLog] Listener [Default] does not exist
+2025-02-13 14:01:12.485434 [ERROR] [236] [T0] [config:template:PHP_SuEXEC] Listener [Default] does not exist
+2025-02-13 14:01:12.487693 [ERROR] [236] [T0] [config:template:EasyRailsWithSuEXEC] Listener [Default] does not exist
+2025-02-13 14:01:12.488355 [NOTICE] [236] [T0] Litespeed is ready to serve...
+2025-02-13 14:01:12.488805 [NOTICE] [236] [T0] [AutoRestarter] new child process with pid=239 is forked!
+2025-02-13 14:01:12.489028 [NOTICE] [239] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 9
+2025-02-13 14:01:12.489188 [NOTICE] [236] [T0] [AutoRestarter] new child process with pid=240 is forked!
+2025-02-13 14:01:12.489493 [NOTICE] [240] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 10
+2025-02-13 14:01:12.489670 [INFO] [240] [T0] Stop listener *:7080.
+2025-02-13 14:01:12.503028 [NOTICE] [236] [T0] Memory size is: 7944532KB.
+2025-02-13 14:01:12.489913 [NOTICE] [240] [T0] [Child: 240] Setup swapping space...
+2025-02-13 14:01:12.489957 [NOTICE] [240] [T0] Successfully change current user to nobody
+2025-02-13 14:01:12.489960 [NOTICE] [240] [T0] Core dump is enabled.
+2025-02-13 14:01:12.490539 [INFO] [240] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 14:01:12.490582 [INFO] [240] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 14:01:12.490610 [INFO] [240] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 14:01:12.490612 [ALERT] [240] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 14:01:12.489340 [NOTICE] [239] [T0] [Child: 239] Setup swapping space...
+2025-02-13 14:01:12.489369 [NOTICE] [239] [T0] Successfully change current user to nobody
+2025-02-13 14:01:12.489372 [NOTICE] [239] [T0] Core dump is enabled.
+2025-02-13 14:01:12.489929 [INFO] [239] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 14:01:12.489967 [INFO] [239] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 14:01:12.490005 [INFO] [239] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 14:01:12.490006 [ALERT] [239] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 14:01:12.993171 [INFO] [239] [T0] [/usr/local/lsws/DEFAULT/html/.htaccess:65] Cache Root is not set, ignore cache Enable/Disble directive.
+2025-02-13 14:01:12.999936 [INFO] [239] [T0] [lsphp8] add child process pid: 252, procinfo: 0x2ae33d80
+2025-02-13 14:01:13.196869 [INFO] [236] [T0] [LICENSE] License is OK.
+2025-02-13 14:01:15.289454 [INFO] [239] [T0] [172.18.0.1:60200:HTTP2-1#_AdminVHost] add child process pid: 257, procinfo: 0x2ae477a0
+2025-02-13 14:01:20.340252 [INFO] [240] [T0] [/usr/local/lsws/DEFAULT/html/.htaccess:65] Cache Root is not set, ignore cache Enable/Disble directive.
+2025-02-13 14:01:20.349242 [INFO] [240] [T0] [lsphp8] add child process pid: 260, procinfo: 0x2ae31600
+2025-02-13 14:01:22.092745 [INFO] [239] [T0] [uds://tmp/lshttpd/lsphp.sock] Error Timeout, restart and try again!
+2025-02-13 14:01:22.092864 [INFO] [239] [T0] [172.18.0.1:46682#Example] connection to [/tmp/lshttpd/lsphp.sock] on request #0, confirmed, 0, associated process: 252, running: 1, error: No such file or directory!
+2025-02-13 14:01:22.093328 [INFO] [239] [T0] [uds://tmp/lshttpd/lsphp.sock] Connection refused, restart!
+2025-02-13 14:01:22.093329 [NOTICE] [239] [T0] Graceful stop process group lead by pid: 252
+2025-02-13 14:01:22.093424 [NOTICE] [239] [T0] All pending requests are finished, stop process group lead by pid: 252
+2025-02-13 14:01:22.093603 [INFO] [239] [T0] [lsphp8] add child process pid: 264, procinfo: 0x2ae33eb0
+2025-02-13 14:01:22.110779 [NOTICE] [239] [T0] [172.18.0.1:46682#Example] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:22.110787 [NOTICE] [239] [T0] [172.18.0.1:46682#Example] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:22.111750 [NOTICE] [239] [T0] [172.18.0.1:46694#Example] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:22.111756 [NOTICE] [239] [T0] [172.18.0.1:46694#Example] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:22.055887 [INFO] [240] [T0] [uds://tmp/lshttpd/lsphp.sock] Error Timeout, restart and try again!
+2025-02-13 14:01:22.056009 [INFO] [240] [T0] [172.18.0.1:57168#Example] connection to [/tmp/lshttpd/lsphp.sock.093] on request #0, confirmed, 0, associated process: 260, running: 1, error: No such file or directory!
+2025-02-13 14:01:22.058467 [INFO] [240] [T0] [uds://tmp/lshttpd/lsphp.sock] Connection refused, restart!
+2025-02-13 14:01:22.058469 [NOTICE] [240] [T0] Graceful stop process group lead by pid: 260
+2025-02-13 14:01:22.058645 [NOTICE] [240] [T0] All pending requests are finished, stop process group lead by pid: 260
+2025-02-13 14:01:22.058795 [INFO] [240] [T0] [lsphp8] add child process pid: 262, procinfo: 0x2ae3cdd0
+2025-02-13 14:01:22.074936 [NOTICE] [240] [T0] [172.18.0.1:57168#Example] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:22.074973 [NOTICE] [240] [T0] [172.18.0.1:57168#Example] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:23.391706 [NOTICE] [240] [T0] [172.18.0.1:57168-1#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:23.392671 [NOTICE] [240] [T0] [172.18.0.1:57168-1#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:23.802992 [NOTICE] [240] [T0] [172.18.0.1:57168-2#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:23.802999 [NOTICE] [240] [T0] [172.18.0.1:57168-2#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.019560 [NOTICE] [240] [T0] [172.18.0.1:57168-3#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.021623 [NOTICE] [240] [T0] [172.18.0.1:57168-3#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.203483 [NOTICE] [240] [T0] [172.18.0.1:57168-4#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.203490 [NOTICE] [240] [T0] [172.18.0.1:57168-4#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.394135 [NOTICE] [240] [T0] [172.18.0.1:57168-5#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.394142 [NOTICE] [240] [T0] [172.18.0.1:57168-5#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.584020 [NOTICE] [240] [T0] [172.18.0.1:57168-6#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.584035 [NOTICE] [240] [T0] [172.18.0.1:57168-6#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.792451 [NOTICE] [240] [T0] [172.18.0.1:57168-7#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:24.792461 [NOTICE] [240] [T0] [172.18.0.1:57168-7#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:25.063000 [NOTICE] [240] [T0] [172.18.0.1:57168-8#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:25.067337 [NOTICE] [240] [T0] [172.18.0.1:57168-8#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:25.256359 [NOTICE] [240] [T0] [172.18.0.1:57168-9#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:25.256365 [NOTICE] [240] [T0] [172.18.0.1:57168-9#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:25.434617 [NOTICE] [240] [T0] [172.18.0.1:57168-10#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:25.434624 [NOTICE] [240] [T0] [172.18.0.1:57168-10#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.069585 [NOTICE] [239] [T0] [172.18.0.1:53608#Example] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.072118 [NOTICE] [239] [T0] [172.18.0.1:53608#Example] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.427956 [NOTICE] [239] [T0] [172.18.0.1:53608-1#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.427964 [NOTICE] [239] [T0] [172.18.0.1:53608-1#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.597506 [NOTICE] [239] [T0] [172.18.0.1:53608-2#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.597513 [NOTICE] [239] [T0] [172.18.0.1:53608-2#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.774645 [NOTICE] [239] [T0] [172.18.0.1:53608-3#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.774656 [NOTICE] [239] [T0] [172.18.0.1:53608-3#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.957702 [NOTICE] [239] [T0] [172.18.0.1:53608-4#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:34.957710 [NOTICE] [239] [T0] [172.18.0.1:53608-4#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.115694 [NOTICE] [239] [T0] [172.18.0.1:53608-5#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.118742 [NOTICE] [239] [T0] [172.18.0.1:53608-5#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.292993 [NOTICE] [239] [T0] [172.18.0.1:53608-6#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.293000 [NOTICE] [239] [T0] [172.18.0.1:53608-6#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.466894 [NOTICE] [239] [T0] [172.18.0.1:53608-7#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.466900 [NOTICE] [239] [T0] [172.18.0.1:53608-7#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.933258 [NOTICE] [239] [T0] [172.18.0.1:53608-8#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:35.933266 [NOTICE] [239] [T0] [172.18.0.1:53608-8#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:36.129635 [NOTICE] [239] [T0] [172.18.0.1:53608-9#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:36.129642 [NOTICE] [239] [T0] [172.18.0.1:53608-9#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:36.324629 [NOTICE] [239] [T0] [172.18.0.1:53608-10#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:36.324639 [NOTICE] [239] [T0] [172.18.0.1:53608-10#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:47.053671 [INFO] [239] [T0] [172.18.0.1:60200:HTTP2-23#_AdminVHost] add child process pid: 278, procinfo: 0x2ae477a0
+2025-02-13 14:01:59.009014 [NOTICE] [239] [T0] [172.18.0.1:59552#Example] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:59.011827 [NOTICE] [239] [T0] [172.18.0.1:59552#Example] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:59.559787 [NOTICE] [239] [T0] [172.18.0.1:59552-1#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:59.559795 [NOTICE] [239] [T0] [172.18.0.1:59552-1#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:59.801278 [NOTICE] [239] [T0] [172.18.0.1:59552-2#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:01:59.801287 [NOTICE] [239] [T0] [172.18.0.1:59552-2#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:02:00.037153 [NOTICE] [239] [T0] [172.18.0.1:59552-3#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:02:00.066639 [NOTICE] [239] [T0] [172.18.0.1:59552-3#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:02:01.258810 [NOTICE] [239] [T0] [172.18.0.1:59552-4#Example:lsapi] [STDERR] PHP Warning:  require(/usr/local/lsws/DEFAULT/html/vendor/autoload.php): Failed to open stream: No such file or directory in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:02:01.261540 [NOTICE] [239] [T0] [172.18.0.1:59552-4#Example:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Failed opening required '/usr/local/lsws/DEFAULT/html/vendor/autoload.php' (include_path='.:') in /usr/local/lsws/DEFAULT/html/index.php:26\nStack trace:\n#0 {main}\n  thrown in /usr/local/lsws/DEFAULT/html/index.php on line 26\n
+2025-02-13 14:02:32.065403 [INFO] [239] [T0] Process with PID: 278 is dead 
+2025-02-13 14:11:13.076374 [NOTICE] [236] [T0] [380] [AutoUpdate] Checking for new releases...
+2025-02-13 14:11:13.076597 [INFO] [236] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2025-02-13 14:11:17.083083 [NOTICE] [236] [T0] [AutoUpdate] Failed, updateagent exit code: 3
+2025-02-13 14:17:33.401470 [INFO] [239] [T0] [172.18.0.1:45966:HTTP2-1#_AdminVHost] add child process pid: 436, procinfo: 0x2ae477a0
+2025-02-13 14:18:32.063165 [INFO] [239] [T0] Process with PID: 436 is dead 
+2025-02-13 14:20:06.664128 [INFO] [239] [T0] [172.18.0.1:45472:HTTP2-1#_AdminVHost] add child process pid: 485, procinfo: 0x2ae477a0
+2025-02-13 14:21:30.586038 [NOTICE] [236] [T0] Server restart request from admin interface!
+2025-02-13 14:21:30.587968 [INFO] [236] [T0] Stop all listeners.
+2025-02-13 14:21:30.587983 [NOTICE] [236] [T0] Forked [510] for graceful restart.
+2025-02-13 14:21:30.588238 [INFO] [236] [T0] Stop listener *:80.
+2025-02-13 14:21:30.588402 [NOTICE] [236] [T0] Start passing listener sockets through forked child [510].
+2025-02-13 14:21:30.588535 [INFO] [236] [T0] Stop listener *:7080.
+2025-02-13 14:21:30.588613 [INFO] [510] [T0] [*:7080] Pass listener, copy fd 11 to 1002.
+2025-02-13 14:21:30.588700 [NOTICE] [236] [T0] Stop all children workers, nowait=0
+2025-02-13 14:21:30.588820 [INFO] [510] [T0] [TCP *:80], SO_REUSEPORT #1, pass listener copy fd 10 to 1001.
+2025-02-13 14:21:30.588993 [INFO] [510] [T0] [TCP *:80], SO_REUSEPORT #2, pass listener copy fd 9 to 1000.
+2025-02-13 14:21:30.589113 [NOTICE] [510] [T0] Starting new instance: execute '/usr/local/lsws/bin/litespeed'.
+2025-02-13 14:21:30.938890 [NOTICE] [236] [T0] Main process [236] detects new litespeed process is ready, stop child process in 300 seconds.
+2025-02-13 14:21:30.992718 [NOTICE] [236] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=240 !
+2025-02-13 14:21:30.993010 [NOTICE] [236] [T0] [AutoRestarter] child process with pid=240 exited with status=0!
+2025-02-13 14:21:30.587076 [NOTICE] [239] [T0] killed by SIGINT!
+2025-02-13 14:21:30.587080 [NOTICE] [239] [T0] Start shutting down gracefully ...
+2025-02-13 14:21:30.587094 [NOTICE] [239] [T0] Event-loop lingering start.
+2025-02-13 14:21:30.976746 [NOTICE] [239] [T0] New litespeed process is ready, stops listeners
+2025-02-13 14:21:30.976754 [INFO] [239] [T0] Stop all listeners.
+2025-02-13 14:21:30.976756 [INFO] [239] [T0] Stop listener *:80.
+2025-02-13 14:21:30.976765 [INFO] [239] [T0] Stop listener *:7080.
+2025-02-13 14:21:30.976767 [NOTICE] [239] [T0] QuicEngine::startCoolDown(), active connections: 0
+2025-02-13 14:21:32.690697 [NOTICE] [236] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=239 !
+2025-02-13 14:21:32.691164 [NOTICE] [236] [T0] [AutoRestarter] child process with pid=239 exited with status=0!
+2025-02-13 14:21:32.691535 [NOTICE] [236] [T0] Main server stopped!

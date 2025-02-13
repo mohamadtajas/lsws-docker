@@ -112,19 +112,7 @@
     <enable>1</enable>
     <logLevel>0</logLevel>
     <rules>
-&lt;IfModule LiteSpeed&gt;
-    CacheLookup public on
-    ExpiresActive on
-    CacheLookup public on
-    ExpiresActive on
-    ExpiresDefault &quot;access plus 1 day&quot;
-    Header set Cache-Control &quot;public, max-age=86400&quot;
-&lt;/IfModule&gt;
 
-
-&lt;IfModule mod_deflate.c&gt;
-    AddOutputFilterByType DEFLATE application/json application/xml text/xml
-&lt;/IfModule&gt;
     </rules>
   </rewrite>
   <modpagespeed>

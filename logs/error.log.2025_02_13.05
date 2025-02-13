@@ -1,0 +1,57 @@
+2025-02-13 13:13:01.653395 [NOTICE] [T0] Your License key will expire in 14 days
+2025-02-13 13:13:01.653835 [NOTICE] [T0] Loading LiteSpeed/6.3.1 Enterprise ...
+2025-02-13 13:13:01.654078 [NOTICE] [T0] Using [BoringSSL]
+2025-02-13 13:13:01.655175 [NOTICE] [29] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7733
+2025-02-13 13:13:01.655692 [NOTICE] [29] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2025-02-13 13:13:01.658459 [NOTICE] [29] [T0] [config] chroot is disabled.
+2025-02-13 13:13:01.658972 [INFO] [29] [T0] old priority: 0, new priority: 0
+2025-02-13 13:13:01.659246 [INFO] [29] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2025-02-13 13:13:01.664399 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2025-02-13 13:13:01.664749 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2025-02-13 13:13:01.665827 [NOTICE] [29] [T0] start cgid: 33, /usr/local/lsws/bin/lscgid
+2025-02-13 13:13:01.666350 [NOTICE] [29] [T0] start cgid: 34, /usr/local/lsws/bin/httpd
+2025-02-13 13:13:01.668317 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2025-02-13 13:13:02.542333 [INFO] [29] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2025-02-13 13:13:02.544208 [INFO] [29] [T0] Add CloudFlare Subnets to trusted ACL ...
+2025-02-13 13:13:02.572023 [NOTICE] [29] [T0] [*:80] Add SO_REUSEPORT sockets, from #1 to #2
+2025-02-13 13:13:02.575441 [NOTICE] [29] [T0] The maximum number of file descriptor limit is set to 1048576.
+2025-02-13 13:13:02.603765 [NOTICE] [29] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2025-02-13 13:13:02.606077 [INFO] [29] [T0] [config:server:php] Try Litespeed PHP handlers
+2025-02-13 13:13:02.609376 [INFO] [29] [T0] PHP handler [lsphp83] with PHP binary [/usr/local/lsws/lsphp83/bin/lsphp] already exists.
+2025-02-13 13:13:02.609780 [INFO] [29] [T0] Add #1 suffix handler [lsphp83]->[lsphp8].
+2025-02-13 13:13:02.612240 [INFO] [29] [T0] Associate [php83] with PHP handler [lsphp8].
+2025-02-13 13:13:02.613194 [INFO] [29] [T0] Add #2 suffix handler [php83]->[lsphp8].
+2025-02-13 13:13:02.615202 [INFO] [29] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2025-02-13 13:13:02.621964 [INFO] [29] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php73]
+2025-02-13 13:13:02.639792 [NOTICE] [29] [T0] [config:vhost:Example:epsr:lsphp8] invalid path - /usr/local/lsws/lsphp8/bin/lsphp, it cannot be started by Web server!
+2025-02-13 13:13:02.651776 [ERROR] [29] [T0] [config:template:docker] Listener [HTTP] does not exist
+2025-02-13 13:13:02.651891 [ERROR] [29] [T0] [config:template:docker] Listener [HTTPS] does not exist
+2025-02-13 13:13:02.652291 [ERROR] [29] [T0] [config:vhost:localhost] Path for vhost root is not accessible: /var/www/vhosts/localhost/
+2025-02-13 13:13:02.654849 [ERROR] [29] [T0] [config:template:centralConfigLog] Listener [Default] does not exist
+2025-02-13 13:13:02.657140 [ERROR] [29] [T0] [config:template:PHP_SuEXEC] Listener [Default] does not exist
+2025-02-13 13:13:02.660684 [ERROR] [29] [T0] [config:template:EasyRailsWithSuEXEC] Listener [Default] does not exist
+2025-02-13 13:13:02.662101 [NOTICE] [29] [T0] Litespeed is ready to serve...
+2025-02-13 13:13:02.662470 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=35 is forked!
+2025-02-13 13:13:02.662696 [NOTICE] [35] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 26
+2025-02-13 13:13:02.662887 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=36 is forked!
+2025-02-13 13:13:02.663097 [NOTICE] [36] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 27
+2025-02-13 13:13:02.663263 [INFO] [36] [T0] Stop listener *:7080.
+2025-02-13 13:13:02.662968 [NOTICE] [35] [T0] [Child: 35] Setup swapping space...
+2025-02-13 13:13:02.663006 [NOTICE] [35] [T0] Successfully change current user to nobody
+2025-02-13 13:13:02.663009 [NOTICE] [35] [T0] Core dump is enabled.
+2025-02-13 13:13:02.663585 [INFO] [35] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 13:13:02.663623 [INFO] [35] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 13:13:02.663657 [INFO] [35] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 13:13:02.663659 [ALERT] [35] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 13:13:02.663693 [NOTICE] [36] [T0] [Child: 36] Setup swapping space...
+2025-02-13 13:13:02.663859 [NOTICE] [36] [T0] Successfully change current user to nobody
+2025-02-13 13:13:02.663862 [NOTICE] [36] [T0] Core dump is enabled.
+2025-02-13 13:13:02.664438 [INFO] [36] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 13:13:02.664473 [INFO] [36] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 13:13:02.664501 [INFO] [36] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 13:13:02.664502 [ALERT] [36] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 13:13:03.328439 [INFO] [29] [T0] [LICENSE] License is OK.
+2025-02-13 13:23:03.085430 [NOTICE] [29] [T0] [179] [AutoUpdate] Checking for new releases...
+2025-02-13 13:23:03.085565 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2025-02-13 13:23:03.456698 [INFO] [29] [T0] [AutoUpdate] No new update.
+2025-02-13 13:23:07.102687 [NOTICE] [29] [T0] [180] Start to clean up cache directory.

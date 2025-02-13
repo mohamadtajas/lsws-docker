@@ -11,3 +11,8 @@
 2025-02-13 00:30:55.790 [STDERR] sh: 1: /usr/sbin/sendmail: not found
 2025-02-13 00:31:17.910 [STDERR] sh: 1: /usr/sbin/sendmail: not found
 2025-02-13 00:31:19.924 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 13:23:56.818 [STDERR] [ERROR] Invalid serial number!
+2025-02-13 13:33:41.604 [STDERR] [ERROR] Invalid serial number!
+2025-02-13 13:35:08.730 [STDERR] [ERROR] Invalid serial number!
+2025-02-13 13:52:45.842 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2025-02-13 13:53:24.016 [STDERR] [ERROR] Failed to find your license key under - /usr/local/lsws/ or /usr/local/lsws/conf/!

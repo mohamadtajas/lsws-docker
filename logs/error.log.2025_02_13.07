@@ -1,0 +1,78 @@
+2025-02-13 13:33:41.502893 [NOTICE] [T0] Your License key will expire in 14 days
+2025-02-13 13:33:41.503075 [NOTICE] [T0] Loading LiteSpeed/6.3.1 Enterprise ...
+2025-02-13 13:33:41.503212 [NOTICE] [T0] Using [BoringSSL]
+2025-02-13 13:33:41.504018 [NOTICE] [196] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7528
+2025-02-13 13:33:41.504313 [NOTICE] [196] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2025-02-13 13:33:41.506858 [NOTICE] [196] [T0] [*:80] Recovering server socket, fd: 9 
+2025-02-13 13:33:41.507489 [NOTICE] [196] [T0] [*:80] Recovering server socket, SO_REUSEPORT #2, fd: 10.
+2025-02-13 13:33:41.508782 [NOTICE] [196] [T0] [*:7080] Recovering server socket, fd: 11 
+2025-02-13 13:33:41.508962 [NOTICE] [196] [T0] [config] chroot is disabled.
+2025-02-13 13:33:41.509162 [INFO] [196] [T0] old priority: 0, new priority: 0
+2025-02-13 13:33:41.509318 [INFO] [196] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2025-02-13 13:33:41.511406 [INFO] [196] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2025-02-13 13:33:41.511526 [INFO] [196] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2025-02-13 13:33:41.511817 [NOTICE] [196] [T0] start cgid: 197, /usr/local/lsws/bin/lscgid
+2025-02-13 13:33:41.512143 [NOTICE] [196] [T0] start cgid: 198, /usr/local/lsws/bin/httpd
+2025-02-13 13:33:41.514336 [INFO] [196] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2025-02-13 13:33:41.514534 [INFO] [196] [T0] Add CloudFlare Subnets to trusted ACL ...
+2025-02-13 13:33:41.516225 [NOTICE] [196] [T0] The maximum number of file descriptor limit is set to 1048576.
+2025-02-13 13:33:41.523257 [NOTICE] [196] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2025-02-13 13:33:41.523410 [INFO] [196] [T0] [config:server:php] Try Litespeed PHP handlers
+2025-02-13 13:33:41.523537 [INFO] [196] [T0] PHP handler [lsphp83] with PHP binary [/usr/local/lsws/lsphp83/bin/lsphp] already exists.
+2025-02-13 13:33:41.523668 [INFO] [196] [T0] Add #1 suffix handler [lsphp83]->[lsphp8].
+2025-02-13 13:33:41.523781 [INFO] [196] [T0] Associate [php83] with PHP handler [lsphp8].
+2025-02-13 13:33:41.523897 [INFO] [196] [T0] Add #2 suffix handler [php83]->[lsphp8].
+2025-02-13 13:33:41.524015 [INFO] [196] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2025-02-13 13:33:41.524259 [INFO] [196] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php73]
+2025-02-13 13:33:41.531223 [NOTICE] [196] [T0] [config:vhost:Example:epsr:lsphp8] invalid path - /usr/local/lsws/lsphp8/bin/lsphp, it cannot be started by Web server!
+2025-02-13 13:33:41.540251 [ERROR] [196] [T0] [config:template:docker] Listener [HTTP] does not exist
+2025-02-13 13:33:41.540613 [ERROR] [196] [T0] [config:template:docker] Listener [HTTPS] does not exist
+2025-02-13 13:33:41.541318 [ERROR] [196] [T0] [config:vhost:localhost] Path for vhost root is not accessible: /var/www/vhosts/localhost/
+2025-02-13 13:33:41.562741 [ERROR] [196] [T0] [config:template:centralConfigLog] Listener [Default] does not exist
+2025-02-13 13:33:41.581151 [ERROR] [196] [T0] [config:template:PHP_SuEXEC] Listener [Default] does not exist
+2025-02-13 13:33:41.584673 [ERROR] [196] [T0] [config:template:EasyRailsWithSuEXEC] Listener [Default] does not exist
+2025-02-13 13:33:41.585599 [NOTICE] [196] [T0] Litespeed is ready to serve...
+2025-02-13 13:33:41.586112 [NOTICE] [196] [T0] [AutoRestarter] new child process with pid=199 is forked!
+2025-02-13 13:33:41.586396 [NOTICE] [199] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 9
+2025-02-13 13:33:41.586494 [NOTICE] [196] [T0] [AutoRestarter] new child process with pid=200 is forked!
+2025-02-13 13:33:41.586767 [NOTICE] [200] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 10
+2025-02-13 13:33:41.586954 [INFO] [200] [T0] Stop listener *:7080.
+2025-02-13 13:33:41.604777 [NOTICE] [196] [T0] Memory size is: 7944532KB.
+2025-02-13 13:33:41.586765 [NOTICE] [199] [T0] [Child: 199] Setup swapping space...
+2025-02-13 13:33:41.586807 [NOTICE] [199] [T0] Successfully change current user to nobody
+2025-02-13 13:33:41.586811 [NOTICE] [199] [T0] Core dump is enabled.
+2025-02-13 13:33:41.587167 [INFO] [199] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 13:33:41.587226 [INFO] [199] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 13:33:41.587292 [INFO] [199] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 13:33:41.587294 [ALERT] [199] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 13:33:41.587307 [NOTICE] [200] [T0] [Child: 200] Setup swapping space...
+2025-02-13 13:33:41.587352 [NOTICE] [200] [T0] Successfully change current user to nobody
+2025-02-13 13:33:41.587355 [NOTICE] [200] [T0] Core dump is enabled.
+2025-02-13 13:33:41.587763 [INFO] [200] [T0] [SSL_APK] created offloader with 2 workers.
+2025-02-13 13:33:41.587815 [INFO] [200] [T0] [MODSEC] created offloader with 10 workers.
+2025-02-13 13:33:41.587857 [INFO] [200] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2025-02-13 13:33:41.587858 [ALERT] [200] [T0] LiteSpeed/6.3.1 Enterprise starts successfully!
+2025-02-13 13:33:42.270107 [INFO] [196] [T0] [LICENSE] License is OK.
+2025-02-13 13:35:07.816821 [NOTICE] [196] [T0] [196] Server Restart Request via SIGUSR1...
+2025-02-13 13:35:07.817461 [INFO] [196] [T0] Stop all listeners.
+2025-02-13 13:35:07.817480 [NOTICE] [196] [T0] Forked [256] for graceful restart.
+2025-02-13 13:35:07.817987 [NOTICE] [196] [T0] Start passing listener sockets through forked child [256].
+2025-02-13 13:35:07.817705 [INFO] [196] [T0] Stop listener *:80.
+2025-02-13 13:35:07.818188 [INFO] [256] [T0] [*:7080] Pass listener, copy fd 11 to 1002.
+2025-02-13 13:35:07.818383 [INFO] [196] [T0] Stop listener *:7080.
+2025-02-13 13:35:07.818822 [NOTICE] [196] [T0] Stop all children workers, nowait=0
+2025-02-13 13:35:07.818647 [INFO] [256] [T0] [TCP *:80], SO_REUSEPORT #1, pass listener copy fd 10 to 1001.
+2025-02-13 13:35:07.819292 [INFO] [256] [T0] [TCP *:80], SO_REUSEPORT #2, pass listener copy fd 9 to 1000.
+2025-02-13 13:35:07.819515 [NOTICE] [256] [T0] Starting new instance: execute '/usr/local/lsws/bin/litespeed'.
+2025-02-13 13:35:07.817243 [NOTICE] [200] [T0] killed by SIGINT!
+2025-02-13 13:35:07.817247 [NOTICE] [200] [T0] Start shutting down gracefully ...
+2025-02-13 13:35:07.817258 [NOTICE] [200] [T0] Event-loop lingering start.
+2025-02-13 13:35:07.817248 [NOTICE] [199] [T0] killed by SIGINT!
+2025-02-13 13:35:07.817252 [NOTICE] [199] [T0] Start shutting down gracefully ...
+2025-02-13 13:35:07.817261 [NOTICE] [199] [T0] Event-loop lingering start.
+2025-02-13 13:35:08.696350 [NOTICE] [196] [T0] Main process [196] detects new litespeed process is ready, stop child process in 300 seconds.
+2025-02-13 13:35:08.729973 [NOTICE] [196] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=200 !
+2025-02-13 13:35:08.730316 [NOTICE] [196] [T0] [AutoRestarter] child process with pid=200 exited with status=0!
+2025-02-13 13:35:08.730660 [NOTICE] [196] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=199 !
+2025-02-13 13:35:08.730928 [NOTICE] [196] [T0] [AutoRestarter] child process with pid=199 exited with status=0!
+2025-02-13 13:35:08.731099 [NOTICE] [196] [T0] Main server stopped!

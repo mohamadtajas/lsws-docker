@@ -82,7 +82,7 @@
       <retryTimeout>300</retryTimeout>
       <respBuffer>0</respBuffer>
       <autoStart>1</autoStart>
-      <path>/usr/local/lsws/lsphp8/bin/lsphp</path>
+      <path>/usr/local/lsws/lsphp83/bin/lsphp</path>
       <instances>1</instances>
       <priority>0</priority>
       <memSoftLimit>1024M</memSoftLimit>
@@ -111,9 +111,6 @@
   <rewrite>
     <enable>1</enable>
     <logLevel>0</logLevel>
-    <rules>
-
-    </rules>
   </rewrite>
   <modpagespeed>
     <enabled>0</enabled>
